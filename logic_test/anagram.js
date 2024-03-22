@@ -18,7 +18,7 @@ const anagramList = () => {
   result = [];
 
   for (let i = 0; i <= words.length - 1; i++) {
-    const sortedWords = sortingJoin(words[i]);
+    const sortedWords = sortingJoin(words[i].toLowerCase());
 
     if (!result[sortedWords]) {
       result[sortedWords] = [words[i]];
